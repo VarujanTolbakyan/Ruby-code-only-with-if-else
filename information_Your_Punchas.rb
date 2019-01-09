@@ -38,7 +38,7 @@ else
         if (balance / p_price).to_i <= p_count
           msg << "and #{(balance / p_price).to_i} pencil #{balance - (balance / p_price).to_i * p_price} unit will remain"
         else 
-          if balance -p_price * p_count >= pen_price
+          if balance - p_price * p_count >= pen_price
             balance = balance - p_price * p_count
             msg << " and #{p_count} pencil  and #{(balance / pen_price).to_i} pen #{balance - (balance / pen_price).to_i * pen_price} unit will remain"
           else
@@ -49,7 +49,7 @@ else
         if (balance / pen_price).to_i <= pen_count 
           msg << "and #{(balance / pen_price).to_i} pen #{balance - (balance / pen_price).to_i * pen_price} unit will remain"
       	else
-	        if balance -pen_price * pen_count >= p_price
+	        if balance - pen_price * pen_count >= p_price
             balance = balance - pen_price * pen_count
             msg << " and #{pen_count} pen  and #{(balance / p_price).to_i} pencil #{balance - (balance / p_price).to_i * p_price} unit will remain"
           else
@@ -70,7 +70,7 @@ else
         if (balance / b_price).to_i <= b_count
           msg << "and #{(balance / b_price).to_i} book #{balance - (balance / b_price).to_i * b_price} unit will remain"
         else
-          if balance -b_price * b_count >= pen_price
+          if balance - b_price * b_count >= pen_price
             balance = balance - b_price * b_count
             msg << " and #{b_count} book  and #{(balance / pen_price).to_i} pen #{balance - (balance / pen_price).to_i * pen_price} unit will remain"
           elsif balance < p_price && balance < pen_price 
@@ -83,7 +83,7 @@ else
         if (balance / pen_price).to_i <= pen_count
           msg << "and #{(balance / pen_price).to_i} pen #{balance - (balance / pen_price).to_i * pen_price} unit will remain"
         else
-          if balance -pen_price * pen_count >= b_price
+          if balance - pen_price * pen_count >= b_price
             balance = balance - pen_price * pen_count
             msg << " and #{pen_count} pen  and #{(balance / b_price).to_i} book #{balance - (balance / b_price).to_i * b_price} unit will remain"
           else
@@ -104,7 +104,7 @@ else
         if (balance / p_price).to_i <= p_count
           msg << "and #{(balance / p_price).to_i} pencil #{balance - (balance / p_price).to_i * p_price} unit will remain"
         else
-          if balance -p_price * p_count >= b_price
+          if balance - p_price * p_count >= b_price
             balance = balance - p_price * p_count
             msg << " and #{p_count} pencil  and #{(balance / b_price).to_i} book #{balance - (balance / b_price).to_i * b_price} unit will remain"
           else
@@ -115,7 +115,7 @@ else
         if (balance / b_price).to_i <= b_count
           msg << "and #{(balance / b_price).to_i} book #{balance - (balance / b_price).to_i * b_price} unit will remain"
         else
-          if balance -b_price * b_count >= p_price
+          if balance - b_price * b_count >= p_price
             balance = balance - b_price * b_count
             msg << " and #{b_count} book  and #{(balance / p_price).to_i} pencil #{balance - (balance / p_price).to_i * p_count} unit will remain"
           else
