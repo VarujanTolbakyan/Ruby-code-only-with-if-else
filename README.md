@@ -1,2 +1,2 @@
 # My-first-ruby-project
-## This project about if else 
+## This project about (if and else) 
